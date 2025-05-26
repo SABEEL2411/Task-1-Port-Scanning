@@ -46,7 +46,7 @@ I took the screenshots of that captured packets and posted in my repository
 
 INTERVIEW QUESTIONS AND ANSWERS :
 1. What is an open port?
-A:An open port is a network port that is accepting connections. It means a service is actively listening on that port, allowing communication from other devices. Open ports can be entry points for legitimate traffic or potential attacks.\
+A:An open port is a network port that is accepting connections. It means a service is actively listening on that port, allowing communication from other devices. Open ports can be entry points for legitimate traffic or potential attacks.
 
 2. How does Nmap perform a TCP SYN scan?
 A:Nmap uses a TCP SYN scan (also called "half-open" scanning) by sending a SYN packet to a target port:
