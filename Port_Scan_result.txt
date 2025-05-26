@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Mon May 26 13:23:36 2025 as: /usr/lib/nmap/nmap --privileged -sS -oN Port_Scan_result.txt 192.168.0.109/24
+Nmap scan report for 192.168.0.1
+Host is up (0.0070s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE    SERVICE
+23/tcp   filtered telnet
+80/tcp   open     http
+1900/tcp open     upnp
+MAC Address: 3C:64:CF:30:C7:D4 (Unknown)
+
+Nmap scan report for 192.168.0.105
+Host is up (0.00030s latency).
+All 1000 scanned ports on 192.168.0.105 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 30:03:C8:23:08:C5 (Cloud Network Technology Singapore PTE.)
+
+Nmap scan report for 192.168.0.109
+Host is up (0.0000050s latency).
+All 1000 scanned ports on 192.168.0.109 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+# Nmap done at Mon May 26 13:23:43 2025 -- 256 IP addresses (3 hosts up) scanned in 6.37 seconds
