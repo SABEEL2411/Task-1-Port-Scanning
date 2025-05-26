@@ -46,9 +46,11 @@ I took the screenshots of that captured packets and posted in my repository
 
 INTERVIEW QUESTIONS AND ANSWERS :
 1. What is an open port?
+   
 A:An open port is a network port that is accepting connections. It means a service is actively listening on that port, allowing communication from other devices. Open ports can be entry points for legitimate traffic or potential attacks.
 
-2. How does Nmap perform a TCP SYN scan?
+3. How does Nmap perform a TCP SYN scan?
+
 A:Nmap uses a TCP SYN scan (also called "half-open" scanning) by sending a SYN packet to a target port:
   * If it replies with SYN-ACK, the port is open.
   * If it replies with RST, the port is closed.
@@ -56,6 +58,7 @@ A:Nmap uses a TCP SYN scan (also called "half-open" scanning) by sending a SYN p
     Nmap doesn't complete the handshake, making it fast and stealthy.
 
 3. What risks are associated with open ports?
+
 A: Open ports can expose services that:
    * Have vulnerabilities
    * Are misconfigured
@@ -63,11 +66,13 @@ A: Open ports can expose services that:
      Attackers can exploit these to gain unauthorized access, run exploits, or steal data.
 
 4. Explain the difference between TCP and UDP scanning.
+
 A: * TCP scanning is connection-oriented. It relies on a handshake process (SYN, SYN-ACK, ACK).
    * UDP scanning is connectionless. It sends UDP packets and checks for no response or ICMP "port unreachable" replies.
      UDP scans are slower and harder to interpret but useful for services like DNS, SNMP, and DHCP.
 
 5. How can open ports be secured?
+
 A: * Close unused ports.
    * Use firewalls to block unnecessary traffic.
    * Implement access controls.
@@ -75,12 +80,14 @@ A: * Close unused ports.
    * Use port-knocking or VPNs for sensitive services.
 
 6. What is a firewall's role regarding ports?
+
 A: A firewall controls inbound and outbound traffic based on rules. It can:
    * Block or allow traffic on specific ports.
    * Prevent unauthorized access to services.
    * Detect and stop port scans or suspicious behavior.
 
 7. What is a port scan and why do attackers perform it?
+
 A: A port scan is a method of probing a system to discover open ports and services.
    Attackers use it to:
    * Map a target’s network.
@@ -88,6 +95,7 @@ A: A port scan is a method of probing a system to discover open ports and servic
    * Plan further attacks or exploitation.
 
 8. How does Wireshark complement port scanning?
+
 A: Wireshark captures and analyzes live network traffic. It complements Nmap by:
    * Showing actual packet exchanges during scans.
    * Helping confirm what ports responded and how.
