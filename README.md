@@ -5,6 +5,7 @@ In this task I have scanned port on my own IP address by the following steps bel
 Step-1: In terminal put the command - ifconfig
 
 Step-2: After that you will get output like this 
+
 {
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.0.109  netmask 255.255.255.0  broadcast 192.168.0.255
@@ -26,6 +27,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 }
+
 in the above output ip adress is 192.168.0.109 ( Note : this is my ip your might be different 
 
 Step-3:Scan the IP address with Nmap with the command - { nmap -sS 192.168.0.109/24 } make sure to put /24 at the of the IP address to get a proper output with open ports
