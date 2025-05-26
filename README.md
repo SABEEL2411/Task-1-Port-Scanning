@@ -1,6 +1,9 @@
 Task 1 : Port Scanning 
+
 In this task I have scanned port on my own IP address by the following steps bellow :
+
 Step-1: In terminal put the command - ifconfig
+
 Step-2: After that you will get output like this 
 {
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -24,6 +27,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 }
 in the above output ip adress is 192.168.0.109 ( Note : this is my ip your might be different 
+
 Step-3:Scan the IP address with Nmap with the command - { nmap -sS 192.168.0.109/24 } make sure to put /24 at the of the IP address to get a proper output with open ports
 you can see your output in terminal
 open ports are :
@@ -32,6 +36,7 @@ open ports are :
 1900/tcp open     upnp
 
 Optional Content
+
 Step-4: I have open wireshark and capture the packets then again scan the IP address 
 in wireshark I found some packet captured in it .
 I took the screenshots of that captured packets and posted in my repository 
